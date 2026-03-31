@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Учитель</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="card">
+    <h2>Учитель</h2>
+
+    <h3>➕ Добавить урок</h3>
+    <input id="lesson" placeholder="Предмет">
+    <input id="time" placeholder="Время">
+    <input id="className" placeholder="Класс (например 10A)">
+    <button onclick="addSchedule()">Сохранить</button>
+
+    <h3>📅 Расписание</h3>
+    <ul id="list"></ul>
+
+    <h3>📝 Добавить оценку</h3>
+    <input id="studentIIN" placeholder="ИИН ученика">
+    <input id="subject" placeholder="Предмет">
+    <input id="grade" placeholder="Оценка">
+    <button onclick="addGrade()">Сохранить оценку</button>
+
+    <button onclick="logout()">Выйти</button>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

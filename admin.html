@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Админ</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="card">
+    <h2>Админ панель</h2>
+
+    <input id="teacher" placeholder="Имя учителя">
+    <input id="lesson" placeholder="Предмет">
+    <input id="className" placeholder="Класс">
+    <input id="room" placeholder="Кабинет">
+    <input id="time" placeholder="Время">
+    <button onclick="addSchedule()">Сохранить</button>
+
+    <h3>📅 Расписание</h3>
+    <ul id="list"></ul>
+
+    <button onclick="logout()">Выйти</button>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
